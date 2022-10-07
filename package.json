@@ -44,4 +44,5 @@
       "pre-commit": "npm run prettier --staged && ng lint && npm test",
       "pre-push": "ng build --aot true"
     }
+  }
 }
