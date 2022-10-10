@@ -2,6 +2,23 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.4.
 
+## Project architecture and inclusions
+
+Lazy Loading Implemented to improve performance
+@ngneat/cashew added to improve API load time via cache the results.
+Angular Material is being used.
+Shared Module is created.
+Linter is implemented
+Pre-commit , and Pre-push hook is implemented using husky 
+Clean code is followed
+Pokemon API is consumed to get the live data.
+Code Best Practices are followed
+SCSS is used.
+Responsive Web Design
+Acceptence criterias are met.
+UX is taken into the consideration.
+Project is build and hosted on S3 http://pokemon-bucket-go.s3-website-us-east-1.amazonaws.com
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
