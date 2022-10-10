@@ -1,6 +1,5 @@
 import {
   CardDetails,
-  CardList,
   CardListResponse,
 } from './../models/pokemon.model';
 import { HttpClient } from '@angular/common/http';
