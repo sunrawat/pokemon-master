@@ -8,10 +8,11 @@
 ## Shared Module is created.
 ## Linter is implemented
 ## Pre-commit , and Pre-push hook is implemented using husky 
-## Clean code is followed
+## Test cases are written
+## Clean code is followed (uncle bob)
 ## Pokemon API is consumed to get the live data.
-## Code Best Practices are followed
-## SCSS is used.
+## Code Best Practices are followed using angular style gulde
+## CSS preprocessor (scss) is used.
 ## Responsive Web Design
 ## Acceptence criterias are met.
 ## UX is taken into the consideration.
