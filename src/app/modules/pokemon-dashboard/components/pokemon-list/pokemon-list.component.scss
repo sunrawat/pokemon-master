@@ -1,0 +1,38 @@
+@import '_colors';
+.mat-elevation-z8 {
+  padding: 1% 5% 0% 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: $grey-5;
+  &::after {
+    content: "";
+    flex: auto;
+  }
+  .search {
+    display: flex;
+    justify-content: center;
+  }
+  .pokemon-card {
+    margin-right: 10px;
+    margin-top: 3%;
+    cursor: pointer;
+    width: 235px;
+    transition: transform 0.5s;
+
+    &:hover {
+      transform: scale(1.03);
+      background: $grey-4;
+    }
+  }
+  .mat-card-header {
+    .mat-card-title {
+      margin-bottom: 12px;
+      text-shadow: 1px 1px 2px $text-shadow-black;
+      text-align: center;
+      padding: 16px;
+      color: $white;
+      background: $blue-1;
+    }
+  }
+}

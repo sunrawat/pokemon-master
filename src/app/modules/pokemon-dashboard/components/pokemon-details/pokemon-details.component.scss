@@ -1,0 +1,68 @@
+@import '_colors';
+
+@keyframes pokemon-image-animation {
+  from {
+    transform: scale(1.1);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.mat-elevation-z8 {
+  width: 50%;
+  margin: 48px auto;
+
+  .detail-info {
+    tr {
+      padding: 17px;
+      padding-left: 0;
+      display: inline-grid;
+    }
+
+    th {
+      text-align: left;
+      margin-bottom: 5px;
+
+    }
+  }
+
+  .mat-card-header .mat-card-title {
+    text-shadow: 1px 1px 1px $grey-2;
+    font-size: 2em;
+  }
+
+  .center {
+    text-align: center;
+    border-bottom: 2px solid $theme-orange;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+
+  .mat-card-image {
+    width: 24%;
+    margin: 0;
+    display: inline-block;
+    animation: pokemon-image-animation 4s infinite alternate;
+  }
+
+  .previous {
+    background-color: $btn-grey-1;
+    color: $black;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2em;
+    color: $theme-orange;
+    padding: 8px 16px;
+
+    &:hover {
+      background-color: $grey-3;
+      color: $black;
+    }
+  }
+
+  .round {
+    border-radius: 8px;
+  }
+}

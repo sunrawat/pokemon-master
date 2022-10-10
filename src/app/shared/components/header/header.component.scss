@@ -1,0 +1,15 @@
+@import '_colors';
+
+:host {
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 5%;
+  background: $theme-orange;
+  border-bottom: 1px solid $grey-6;
+  top: 0;
+  position: sticky;
+  z-index: 999;
+}
+.logo {
+  width: 55%;
+}

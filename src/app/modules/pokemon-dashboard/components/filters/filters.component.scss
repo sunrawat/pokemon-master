@@ -1,0 +1,13 @@
+:host {
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 5%;
+  background: white;
+  border-bottom: 1px solid #d6d6d6;
+  top: 0;
+  position: sticky;
+  z-index: 999;
+}
+.logo {
+  width: 10%;
+}
