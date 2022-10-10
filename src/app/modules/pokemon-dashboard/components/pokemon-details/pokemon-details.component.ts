@@ -5,15 +5,18 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-pokemon-details',
   templateUrl: './pokemon-details.component.html',
-  styleUrls: ['./pokemon-details.component.scss']
+  styleUrls: ['./pokemon-details.component.scss'],
 })
 export class PokemonDetailsComponent implements OnInit {
   card: any = {};
-  constructor(private route: ActivatedRoute, private pokemonService: PokemonService) {}
+  constructor(
+    private route: ActivatedRoute,
+    private pokemonService: PokemonService
+  ) {}
   ngOnInit(): void {
     const name = this.route.snapshot.paramMap.get('name') || '';
-    this.pokemonService.getPokemonByName(name).subscribe((r: CardDetails)=>{
+    this.pokemonService.getPokemonByName(name).subscribe((r: CardDetails) => {
       this.card = r;
-    })
+    });
   }
 }

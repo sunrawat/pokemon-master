@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  endpointURL: 'https://pokeapi.co/api/v2'
+  endpointURL: 'https://pokeapi.co/api/v2',
 };
 
 /*

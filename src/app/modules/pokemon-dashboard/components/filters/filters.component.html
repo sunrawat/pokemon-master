@@ -1,11 +1,20 @@
 <mat-form-field class="search">
-  <input [value]="selectedSearch" #searchTearm matInput (keyup)="applyFilter(searchTearm.value)" placeholder="Search By Name Or Abilities" />
+  <input
+    [value]="selectedSearch"
+    #searchTearm
+    matInput
+    (keyup)="applyFilter(searchTearm.value)"
+    placeholder="Search By Name Or Abilities"
+  />
 </mat-form-field>
 <mat-form-field>
-
-<mat-select placeholder="Sort By" [value]="selectedSort" (selectionChange)="sort($event)">
+  <mat-select
+    placeholder="Sort By"
+    [value]="selectedSort"
+    (selectionChange)="sort($event)"
+  >
     <mat-option [value]="option" *ngFor="let option of sortOptions">
-      {{option}}
+      {{ option }}
     </mat-option>
   </mat-select>
 </mat-form-field>

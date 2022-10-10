@@ -8,9 +8,8 @@ describe('PokemonIndexComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PokemonIndexComponent ]
-    })
-    .compileComponents();
+      declarations: [PokemonIndexComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
@@ -49,5 +48,4 @@ describe('PokemonIndexComponent', () => {
     app.filter('Venesuer');
     expect(app.searchTearm).toBe('Venesuer');
   });
-
 });

@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-pokemon-index',
   templateUrl: './pokemon-index.component.html',
-  styleUrls: ['./pokemon-index.component.scss']
+  styleUrls: ['./pokemon-index.component.scss'],
 })
 export class PokemonIndexComponent {
   searchTearm = '';

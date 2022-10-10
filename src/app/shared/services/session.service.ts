@@ -2,10 +2,10 @@ import { SessionModel } from './../models/session.model';
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class SessionService {
-  constructor() { }
+  constructor() {}
 
   saveFilters(filters: SessionModel) {
     const data = JSON.stringify(filters);
@@ -20,7 +20,7 @@ export class SessionService {
     return sessionStorage.getItem('search');
   }
 
-  getSavedFilters():SessionModel {
+  getSavedFilters(): SessionModel {
     const data: any = sessionStorage.getItem('filters');
     return JSON.parse(data);
   }

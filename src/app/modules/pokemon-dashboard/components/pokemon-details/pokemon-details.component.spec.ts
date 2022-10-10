@@ -10,10 +10,9 @@ describe('PokemonDetailsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PokemonDetailsComponent ],
-      imports:[RouterTestingModule, HttpClientTestingModule],
-    })
-    .compileComponents();
+      declarations: [PokemonDetailsComponent],
+      imports: [RouterTestingModule, HttpClientTestingModule],
+    }).compileComponents();
   });
 
   beforeEach(() => {

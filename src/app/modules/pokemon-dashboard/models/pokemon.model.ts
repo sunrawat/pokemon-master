@@ -17,15 +17,15 @@ export interface PokemonObject {
   results: CardList[];
 }
 export interface Abilities {
-  ability:  { name: string, url: string},
+  ability: { name: string; url: string };
 }
 
 export interface Sprites {
-  other:  { "official-artwork" : { front_default: string}},
+  other: { 'official-artwork': { front_default: string } };
 }
 
 export interface CardDetails {
-  abilities:  Abilities[],
+  abilities: Abilities[];
   height: number;
   weight: number;
   name: string;
@@ -33,7 +33,7 @@ export interface CardDetails {
 }
 
 export interface CardList {
-  detail : CardDetails;
+  detail: CardDetails;
   name: string;
   url: string;
 }
@@ -41,6 +41,4 @@ export interface CardList {
 export interface CardListResponse {
   results: CardList[];
   count: number;
-  }
-
-
+}

@@ -28,7 +28,9 @@ export class PokemonListComponent implements OnInit, OnChanges, OnDestroy {
 
   sortFilter = '';
   obs!: Observable<any>;
-  dataSource: MatTableDataSource<CardList> = new MatTableDataSource<CardList>([]);
+  dataSource: MatTableDataSource<CardList> = new MatTableDataSource<CardList>(
+    []
+  );
   isLoading = false;
   pageSize = 10;
   currentPage = 0;
@@ -42,7 +44,7 @@ export class PokemonListComponent implements OnInit, OnChanges, OnDestroy {
   ngOnInit() {
     this.changeDetectorRef.detectChanges();
     const filterObj = this.sessionService.getSavedFilters();
-    if(!!filterObj) {
+    if (!!filterObj) {
       this.paginator.pageIndex = filterObj.currentPage;
       this.paginator.pageSize = filterObj.currentPageSize;
       this.sortFilter = filterObj.sort;
@@ -55,8 +57,10 @@ export class PokemonListComponent implements OnInit, OnChanges, OnDestroy {
 
   // setup on load of a component function
   setupDefaultFilters() {
-    this.paginator.pageIndex = this.sessionService.getSavedFilters().currentPage;
-    this.paginator.pageSize = this.sessionService.getSavedFilters().currentPageSize;
+    this.paginator.pageIndex =
+      this.sessionService.getSavedFilters().currentPage;
+    this.paginator.pageSize =
+      this.sessionService.getSavedFilters().currentPageSize;
     this.sortFilter = this.sessionService.getSavedFilters().sort;
   }
 
@@ -76,7 +80,7 @@ export class PokemonListComponent implements OnInit, OnChanges, OnDestroy {
         this.dataSource.paginator.firstPage();
       }
     } else {
-      this.dataSource.filter = ''
+      this.dataSource.filter = '';
       this.loadData(this.sortFilter);
     }
   }
@@ -103,7 +107,7 @@ export class PokemonListComponent implements OnInit, OnChanges, OnDestroy {
   }
 
   // updating index, size on paginator changes
-  pageChanged(event: {pageSize: number, pageIndex: number}) {
+  pageChanged(event: { pageSize: number; pageIndex: number }) {
     this.pageSize = event.pageSize;
     this.pageIndex = event.pageIndex;
     this.currentPage = event.pageIndex;
@@ -122,11 +126,10 @@ export class PokemonListComponent implements OnInit, OnChanges, OnDestroy {
       this.paginator.pageIndex = this.currentPage;
       this.paginator.length = count;
       this.sessionService.saveFilters({
-          currentPage: this.currentPage,
-          currentPageSize:this.paginator.pageSize,
-          sort: this.sortFilter,
-        }
-      );
+        currentPage: this.currentPage,
+        currentPageSize: this.paginator.pageSize,
+        sort: this.sortFilter,
+      });
     });
   }
   ngOnDestroy() {

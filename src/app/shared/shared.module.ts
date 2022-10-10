@@ -34,9 +34,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatSliderModule } from '@angular/material/slider';
-import {
-  MatSnackBarModule
-} from '@angular/material/snack-bar';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatSortModule } from '@angular/material/sort';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatTableModule } from '@angular/material/table';
@@ -47,13 +45,8 @@ import { MatTreeModule } from '@angular/material/tree';
 import { HeaderComponent } from './components/header/header.component';
 import { HttpCacheInterceptorModule } from '@ngneat/cashew';
 @NgModule({
-  declarations: [
-    HeaderComponent,
-  ],
-  imports: [
-    CommonModule,
-    HttpCacheInterceptorModule.forRoot()
-  ],
+  declarations: [HeaderComponent],
+  imports: [CommonModule, HttpCacheInterceptorModule.forRoot()],
   exports: [
     MatAutocompleteModule,
     MatBadgeModule,
@@ -96,6 +89,6 @@ import { HttpCacheInterceptorModule } from '@ngneat/cashew';
     MatTreeModule,
     HeaderComponent,
   ],
-  providers: []
+  providers: [],
 })
-export class SharedModule { }
+export class SharedModule {}

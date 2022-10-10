@@ -8,19 +8,14 @@ import { SharedModule } from '@shared/shared.module';
 import { FiltersComponent } from './components/filters/filters.component';
 import { PokemonDetailsComponent } from './components/pokemon-details/pokemon-details.component';
 
-
 @NgModule({
   declarations: [
     PokemonDashboardComponent,
     PokemonIndexComponent,
     PokemonListComponent,
     FiltersComponent,
-    PokemonDetailsComponent
+    PokemonDetailsComponent,
   ],
-  imports: [
-    CommonModule,
-    PokemonDashboardRoutingModule,
-    SharedModule
-  ]
+  imports: [CommonModule, PokemonDashboardRoutingModule, SharedModule],
 })
-export class PokemonDashboardModule { }
+export class PokemonDashboardModule {}
