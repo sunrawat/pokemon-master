@@ -2,8 +2,6 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.4.
 
-## Project architecture and inclusions
-
 ## Lazy Loading Implemented to improve performance
 ## @ngneat/cashew added to improve API load time via cache the results.
 ## Angular Material is being used.
