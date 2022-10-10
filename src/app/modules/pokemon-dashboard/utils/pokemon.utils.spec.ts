@@ -29,10 +29,9 @@ describe('PokemonUtil', () => {
   });
 
   it('sort card data by Name', () => {
-    const data: any = [ { name: 'BB' }, { name: 'AA' } ];
+    const data: any = [{ name: 'BB' }, { name: 'AA' }];
     const expectData = [{ name: 'AA' }, { name: 'BB' }];
     const result = sortCardData('Name', data);
     expect(result).toEqual(expectData);
-
   });
 });

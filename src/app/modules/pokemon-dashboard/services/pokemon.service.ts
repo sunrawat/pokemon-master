@@ -1,7 +1,4 @@
-import {
-  CardDetails,
-  CardListResponse,
-} from './../models/pokemon.model';
+import { CardDetails, CardListResponse } from './../models/pokemon.model';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import {
