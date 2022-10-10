@@ -11,7 +11,7 @@ const routes: Routes = [
     loadChildren: () =>
       import(`./modules/pokemon-dashboard/pokemon-dashboard.module`).then(
         (module) => module.PokemonDashboardModule
-      ),
+      )
   },
 ];
 @NgModule({
