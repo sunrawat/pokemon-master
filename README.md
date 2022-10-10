@@ -1,6 +1,6 @@
 # Pokemon
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.4.
+## Project is build and hosted on S3 http://pokemon-bucket-go.s3-website-us-east-1.amazonaws.com
 
 ## Lazy Loading Implemented to improve performance
 ## @ngneat/cashew added to improve API load time via cache the results.
@@ -15,7 +15,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Responsive Web Design
 ## Acceptence criterias are met.
 ## UX is taken into the consideration.
-## Project is build and hosted on S3 http://pokemon-bucket-go.s3-website-us-east-1.amazonaws.com
+
 
 ## Development server
 
