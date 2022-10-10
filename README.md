@@ -1,6 +1,6 @@
 # Pokemon
 
-## Project is build and hosted on S3 http://pokemon-bucket-go.s3-website-us-east-1.amazonaws.com
+## Project is hosted on S3 http://pokemon-bucket-go.s3-website-us-east-1.amazonaws.com
 
 ## Lazy Loading Implemented to improve performance
 ## @ngneat/cashew added to improve API load time via cache the results.
