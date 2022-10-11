@@ -2,16 +2,17 @@
 
 ## Project is hosted on S3 http://pokemon-bucket-go.s3-website-us-east-1.amazonaws.com
 
+## Navigation through tabs and enter key.
 ## Lazy Loading Implemented to improve performance
 ## @ngneat/cashew added to improve API load time via cache the results.
 ## Angular Material is being used.
 ## Shared Module is created.
-## Linter is implemented
+## ES Linter is implemented
 ## Pre-commit , and Pre-push hook is implemented using husky 
-## Test cases are written
+## Test cases are written.
 ## Clean code is followed (uncle bob)
 ## Pokemon API is consumed to get the live data.
-## Code Best Practices are followed using angular style gulde
+## Code Best Practices are followed using angular code style guide
 ## CSS preprocessor (scss) is used.
 ## Responsive Web Design
 ## Acceptence criterias are met.
