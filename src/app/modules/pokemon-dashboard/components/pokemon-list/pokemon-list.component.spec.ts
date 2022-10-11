@@ -1,10 +1,7 @@
+import { RouterTestingModule } from '@angular/router/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { PokemonListComponent } from './pokemon-list.component';
-import {
-  HttpClientTestingModule,
-  HttpTestingController,
-} from '@angular/common/http/testing';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 describe('PokemonListComponent', () => {
   let component: PokemonListComponent;
@@ -12,9 +9,10 @@ describe('PokemonListComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [PokemonListComponent],
-      imports: [HttpClientTestingModule],
-    }).compileComponents();
+      declarations: [ PokemonListComponent ],
+      imports: [HttpClientTestingModule, RouterTestingModule],
+    })
+    .compileComponents();
   });
 
   beforeEach(() => {

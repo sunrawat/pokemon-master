@@ -3,8 +3,10 @@
   <mat-card
     class="pokemon-card"
     [state]="card"
+    (keyup.enter)="selectedCardAction(card.name)"
     [routerLink]="['/pokemon-dashboard/pokemon-details', card.name]"
     *ngFor="let card of obs | async; let i = index"
+    [tabindex]="i"
   >
     <ng-container *ngIf="!!card">
       <img

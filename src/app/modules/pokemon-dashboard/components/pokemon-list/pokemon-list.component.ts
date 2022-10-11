@@ -16,6 +16,7 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { Observable, timer } from 'rxjs';
 import { filterPredicate, sortCardData } from '../../utils/pokemen.utils';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-pokemon-list',
   templateUrl: './pokemon-list.component.html',
@@ -39,7 +40,8 @@ export class PokemonListComponent implements OnInit, OnChanges, OnDestroy {
   constructor(
     private changeDetectorRef: ChangeDetectorRef,
     private pokemonService: PokemonService,
-    private sessionService: SessionService
+    private sessionService: SessionService,
+    private router: Router
   ) {}
   ngOnInit() {
     this.changeDetectorRef.detectChanges();
@@ -131,6 +133,9 @@ export class PokemonListComponent implements OnInit, OnChanges, OnDestroy {
         sort: this.sortFilter,
       });
     });
+  }
+  selectedCardAction(name: string) {
+    this.router.navigate(['/pokemon-dashboard/pokemon-details', name]);
   }
   ngOnDestroy() {
     if (this.dataSource) {

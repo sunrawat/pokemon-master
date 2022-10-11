@@ -1,28 +1,34 @@
 @import '_colors';
+:host {
+
+}
 .mat-elevation-z8 {
   padding: 1% 5% 0% 5%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   background: $grey-5;
-  &::after {
-    content: "";
-    flex: auto;
-  }
+  padding-bottom: 100px;
+
   .search {
     display: flex;
     justify-content: center;
   }
   .pokemon-card {
-    margin-right: 10px;
-    margin-top: 3%;
     cursor: pointer;
-    width: 235px;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    margin-right: 2vh;
+
+    width: 230px;
     transition: transform 0.5s;
 
     &:hover {
       transform: scale(1.03);
       background: $grey-4;
+    }
+    &:nth-last-child(1) {
+      padding-bottom: 2vh;
     }
   }
   .mat-card-header {
