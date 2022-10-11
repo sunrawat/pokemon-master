@@ -5,8 +5,8 @@
 ## Navigation through tabs and enter key.
 ## Lazy Loading Implemented to improve performance
 ## @ngneat/cashew added to improve API load time via cache the results.
-## Angular Material is being used.
-## Shared Module is created.
+## Angular Material.
+## Shared Module Pattern.
 ## ES Linter is implemented
 ## Pre-commit , and Pre-push hook is implemented using husky 
 ## Test cases are written.
